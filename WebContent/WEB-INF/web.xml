@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ClassDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AjaxResponse</display-name>
+    <servlet-name>AjaxResponse</servlet-name>
+    <servlet-class>ajax.controller.AjaxResponse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxResponse</servlet-name>
+    <url-pattern>/ajaxResponse.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>servletResponse</display-name>
+    <servlet-name>servletResponse</servlet-name>
+    <servlet-class>ajax.controller.servletResponse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletResponse</servlet-name>
+    <url-pattern>/servletResponse.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CallBackDemo</display-name>
+    <servlet-name>CallBackDemo</servlet-name>
+    <servlet-class>ajax.controller.CallBackDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CallBackDemo</servlet-name>
+    <url-pattern>/callBackDemo.do</url-pattern>
+  </servlet-mapping>
+</web-app>
